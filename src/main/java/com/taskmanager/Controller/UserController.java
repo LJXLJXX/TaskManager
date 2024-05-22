@@ -21,6 +21,7 @@ public class UserController {
     @PostMapping("/register")
     public String register(@RequestBody UserDTO user){
         userService.add(user);
+
         return "注册成功";
     }
 
